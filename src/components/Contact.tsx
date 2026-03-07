@@ -82,8 +82,8 @@ const Contact: React.FC = () => {
     {
       icon: BsTelegram,
       label: 'Telegram',
-      value: '@abhiiiii_aj',
-      href: 'https://t.me/abhiiiii_aj',
+      value: '@abhimanyu_aj',
+      href: 'https://t.me/abhimanyu_aj',
     },
     {
       icon: MapPin,

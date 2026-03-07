@@ -7,8 +7,9 @@ import { Link } from 'react-router-dom';
 
 const Home: React.FC = () => {
   const skills = [
-    'React', 'Nextjs', 'TypeScript', 'Node.js','Tailwind CSS', 'WebSockets', 'WebRTC', 'SQL', 'noSQL', 'Solana', 'Ethereum', 'Web3.js', 'Rust', 'Solidity',
-    'AWS', 'Docker', 'Git', 'Kubernetes', 'Redis'
+    'TypeScript', 'JavaScript', 'Java', 'Python', 'Solidity', 'React', 'Next.js', 'Node.js', 'Express.js',
+    'WebSocket', 'WebRTC', 'gRPC', 'OpenAPI', 'AWS', 'Docker', 'Kubernetes', 'Kafka', 'PubSub',
+    'Prometheus', 'Grafana', 'PostgreSQL', 'MongoDB', 'Redis', 'Prisma'
   ];
 
   return (
@@ -23,7 +24,7 @@ const Home: React.FC = () => {
           Hi, I'm <span className="text-[#B6B09F] dark:text-[#B8CFCE]">Abhimanyu Ajudiya</span>
         </h1>
         <p className="text-xl md:text-2xl text-[#B6B09F] dark:text-[#7F8CAA] mb-8 max-w-3xl mx-auto leading-relaxed transition-colors duration-300">
-          A passionate web3 & full-stack developer, I want to be the best version of myself.
+          Software engineer building distributed systems, Web3 infrastructure, and high-performance backend services.
         </p>
         
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
@@ -55,7 +56,7 @@ const Home: React.FC = () => {
             { icon: Github, href: 'https://github.com/AbhimanyuAjudiya', label: 'GitHub' },
             { icon: Linkedin, href: 'https://www.linkedin.com/in/abhimanyu-ajudiya/', label: 'LinkedIn' },
             { icon: FaXTwitter, href: 'https://x.com/abhiii_aj', label: 'X (Twitter)' },
-            { icon: FaTelegramPlane, href: 'https://t.me/abhiiiii_aj', label: 'Telegram' },
+            { icon: FaTelegramPlane, href: 'https://t.me/abhimanyu_aj', label: 'Telegram' },
           ].map((social) => (
             <motion.a
               key={social.label}
@@ -80,7 +81,7 @@ const Home: React.FC = () => {
       >
         <h2 className="text-3xl font-bold text-black dark:text-[#EAEFEF] mb-6 text-center transition-colors duration-300">About Me</h2>
         <p className="text-lg text-[#B6B09F] dark:text-[#B8CFCE] leading-relaxed text-center max-w-3xl mx-auto mb-8 transition-colors duration-300">
-          Hey! I’m a full-stack developer who loves building cool things on the web. I’ve been freelancing for a while now, working on everything from Web2 apps to Web3 projects. Lately, I’ve been diving into the Solana ecosystem and learning how to build real-world stuff like crypto payment systems. I’m always curious about new tech, love experimenting with frameworks, and enjoy contributing to open source whenever I can. When I’m not coding, you’ll probably find me reading tech blogs or trying out something new just for fun.
+          I'm a final-year B.Tech IT student and full-stack developer with a deep interest in distributed systems, blockchain infrastructure, and backend engineering. I've won three international hackathons — including the Sui Overflow Global Hackathon ($30k prize, 3000+ developers) — by shipping production-grade protocols under tight deadlines. I build decentralized platforms, backend systems, and infrastructure that handles real-world load. When I'm not building, I'm solving LeetCode problems (280+ solved) or reading system design papers.
         </p>
       </motion.div>
 

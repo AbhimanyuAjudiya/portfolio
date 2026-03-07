@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Home, Code, Briefcase, BookOpen, Mail, Sun, Moon } from 'lucide-react';
+import { Menu, X, Home, Code, Briefcase, Mail, Sun, Moon } from 'lucide-react';
 import { useTheme } from '../contexts/ThemeContext';
 
 interface LayoutProps {
@@ -27,7 +27,6 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     { name: 'Home', href: '/', icon: Home },
     { name: 'Projects', href: '/projects', icon: Code },
     { name: 'Experience', href: '/experience', icon: Briefcase },
-    { name: 'Blog', href: '/blog', icon: BookOpen },
     { name: 'Contact', href: '/contact', icon: Mail },
   ];
 

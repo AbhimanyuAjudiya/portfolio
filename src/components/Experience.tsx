@@ -1,8 +1,33 @@
-import React from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { experiences } from '../data/experience';
 
 const Experience: React.FC = () => {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const dotRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const [lineStyle, setLineStyle] = useState<{ top: number; height: number }>({ top: 0, height: 0 });
+
+  useEffect(() => {
+    const updateLine = () => {
+      const container = containerRef.current;
+      const dots = dotRefs.current.filter(Boolean);
+      if (!container || dots.length < 2) return;
+
+      const containerRect = container.getBoundingClientRect();
+      const firstDot = dots[0]!.getBoundingClientRect();
+      const lastDot = dots[dots.length - 1]!.getBoundingClientRect();
+
+      const top = firstDot.top + firstDot.height / 2 - containerRect.top;
+      const bottom = lastDot.top + lastDot.height / 2 - containerRect.top;
+
+      setLineStyle({ top, height: bottom - top });
+    };
+
+    updateLine();
+    window.addEventListener('resize', updateLine);
+    return () => window.removeEventListener('resize', updateLine);
+  }, []);
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -43,20 +68,27 @@ const Experience: React.FC = () => {
         initial="hidden"
         animate="visible"
         className="relative"
+        ref={containerRef}
       >
-        {/* Timeline Line */}
-        <div className="absolute left-4 md:left-1/2 transform md:-translate-x-0.5 w-0.5 h-full bg-[#B6B09F] dark:bg-[#7F8CAA] opacity-30 transition-colors duration-300"></div>
+        {/* Timeline Line - dynamically stretches from first dot to last dot */}
+        <div
+          className="absolute left-4 md:left-1/2 transform md:-translate-x-0.5 w-0.5 bg-[#B6B09F] dark:bg-[#7F8CAA] opacity-30 transition-colors duration-300"
+          style={{ top: lineStyle.top, height: lineStyle.height }}
+        ></div>
 
         {experiences.map((experience, index) => (
           <motion.div
             key={experience.id}
             variants={itemVariants}
-            className={`relative flex items-center mb-12 ${
+            className={`relative flex items-center ${index < experiences.length - 1 ? 'mb-12' : ''} ${
               index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
             }`}
           >
             {/* Timeline Dot */}
-            <div className="absolute left-4 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-black dark:bg-[#B8CFCE] rounded-full border-4 border-[#F2F2F2] dark:border-[#333446] z-10 transition-colors duration-300"></div>
+            <div
+              ref={(el) => { dotRefs.current[index] = el; }}
+              className="absolute left-4 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-black dark:bg-[#B8CFCE] rounded-full border-4 border-[#F2F2F2] dark:border-[#333446] z-10 transition-colors duration-300"
+            ></div>
 
             {/* Content Card */}
             <div className={`ml-12 md:ml-0 md:w-5/12 ${index % 2 === 0 ? 'md:mr-auto md:pr-8' : 'md:ml-auto md:pl-8'}`}>

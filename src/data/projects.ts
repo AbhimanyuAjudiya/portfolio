@@ -9,6 +9,23 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    id: "6",
+    title: "SuiSign",
+    description:
+      "SuiSign is a fully decentralized document signing platform that leverages the Sui blockchain and Walrus decentralized storage. It allows users to upload documents, define signers, and collect cryptographically verified signatures with zkLogin authentication via Google accounts. Features include multi-signature support, immutable document storage, flexible fee payment, and a public agreement explorer for transparency.",
+    technologies: [
+      "React",
+      "TypeScript",
+      "Sui Blockchain",
+      "Move",
+      "Walrus Decentralized Storage",
+      "zkLogin",
+      "Node.js",
+      "pnpm",
+    ],
+    demoUrl: "https://suisign.io/",
+  },
+  {
     id: "1",
     title: "Toradle",
     description:
@@ -90,23 +107,5 @@ export const projects: Project[] = [
     ],
     githubUrl: "https://github.com/AbhimanyuAjudiya/meme-generator",
     demoUrl: "https://abhimanyuajudiya.github.io/meme-generator/",
-  },
-  {
-    id: "6",
-    title: "SuiSign",
-    description:
-      "SuiSign is a fully decentralized document signing platform that leverages the Sui blockchain and Walrus decentralized storage. It allows users to upload documents, define signers, and collect cryptographically verified signatures with zkLogin authentication via Google accounts. Features include multi-signature support, immutable document storage, flexible fee payment, and a public agreement explorer for transparency.",
-    technologies: [
-      "React",
-      "TypeScript",
-      "Sui Blockchain",
-      "Move",
-      "Walrus Decentralized Storage",
-      "zkLogin",
-      "Node.js",
-      "pnpm",
-    ],
-    githubUrl: "https://github.com/AbhimanyuAjudiya/sui-sign",
-    demoUrl: "https://sui-sign.vercel.app",
   },
 ];
