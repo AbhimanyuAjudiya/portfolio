@@ -38,7 +38,7 @@ const Home: React.FC = () => {
             </motion.div>
           </Link>
           <motion.a
-            href="/resume.pdf"
+            href="/Abhimanyu_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
