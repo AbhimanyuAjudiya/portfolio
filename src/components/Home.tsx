@@ -81,7 +81,7 @@ const Home: React.FC = () => {
       >
         <h2 className="text-3xl font-bold text-black dark:text-[#EAEFEF] mb-6 text-center transition-colors duration-300">About Me</h2>
         <p className="text-lg text-[#B6B09F] dark:text-[#B8CFCE] leading-relaxed text-center max-w-3xl mx-auto mb-8 transition-colors duration-300">
-          I'm a final-year B.Tech IT student and full-stack developer with a deep interest in distributed systems, blockchain infrastructure, and backend engineering. I've won three international hackathons — including the Sui Overflow Global Hackathon ($30k prize, 3000+ developers) — by shipping production-grade protocols under tight deadlines. I build decentralized platforms, backend systems, and infrastructure that handles real-world load. When I'm not building, I'm solving LeetCode problems (280+ solved) or reading system design papers.
+          I'm a final-year B.Tech IT student and full-stack developer with a deep interest in distributed systems, blockchain infrastructure, and backend engineering. I've won three international hackathons; including the Sui Overflow Global Hackathon ($30k prize, 3000+ developers) by shipping production-grade protocols under tight deadlines. I build decentralized platforms, backend systems, and infrastructure that handles real-world load. When I'm not building, I'm solving LeetCode problems (280+ solved) or reading system design papers.
         </p>
       </motion.div>
 

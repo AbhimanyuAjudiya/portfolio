@@ -80,7 +80,7 @@ export const projects: Project[] = [
     id: "4",
     title: "Medium-like Blogging Platform",
     description:
-      "A modern, full-stack web application replicating Medium's core features—blog publishing, reading, and user management. Includes an interactive React frontend, RESTful backend APIs, authentication, and robust data validation.",
+      "A modern, full-stack web application replicating Medium's core features: blog publishing, reading, and user management. Includes an interactive React frontend, RESTful backend APIs, authentication, and robust data validation.",
     technologies: [
       "React",
       "TypeScript",
