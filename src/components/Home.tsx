@@ -83,7 +83,7 @@ const Home: React.FC = () => {
       >
         <h2 className="text-3xl font-bold text-black dark:text-[#EAEFEF] mb-6 text-center transition-colors duration-300">About Me</h2>
         <p className="text-lg text-[#B6B09F] dark:text-[#B8CFCE] leading-relaxed text-center max-w-3xl mx-auto mb-8 transition-colors duration-300">
-          I'm a software engineer who builds reliable backend systems, full-stack products, and infrastructure from the ground up. I work comfortably across the stack, from APIs, databases, and distributed systems to smart contracts and decentralized storage. As Founding Blockchain Engineer at SuiSign, I architected and shipped a full document-signing platform end to end. I've won three international hackathons, including the Sui Overflow Global Hackathon ($30k prize, among 3,000+ developers), by shipping production-grade systems under tight deadlines. When I'm not building, I'm solving LeetCode problems (250+ solved) or digging into system design.
+          I'm a software engineer who builds reliable backend systems, full-stack products, and infrastructure from the ground up. I work comfortably across the stack, from APIs, databases, and distributed systems to smart contracts and decentralized storage. As Founding Blockchain Engineer at SuiSign, I architected and shipped a full document-signing platform end to end. I've won multiple hackathons, including the Sui Overflow Global Hackathon ($30k prize, among 3,000+ developers), by shipping production-grade systems under tight deadlines. When I'm not building, I'm solving LeetCode problems (250+ solved) or digging into system design.
         </p>
       </motion.div>
 
