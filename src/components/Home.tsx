@@ -3,13 +3,14 @@ import { motion } from 'framer-motion';
 import { Github, Linkedin, Mail, Download} from 'lucide-react';
 import { FaXTwitter } from "react-icons/fa6";
 import { FaTelegramPlane } from "react-icons/fa";
+import { SiNotion } from "react-icons/si";
 import { Link } from 'react-router-dom';
 
 const Home: React.FC = () => {
   const skills = [
-    'TypeScript', 'JavaScript', 'Java', 'Python', 'Solidity', 'React', 'Next.js', 'Node.js', 'Express.js',
-    'WebSocket', 'WebRTC', 'gRPC', 'OpenAPI', 'AWS', 'Docker', 'Kubernetes', 'Kafka', 'PubSub',
-    'Prometheus', 'Grafana', 'PostgreSQL', 'MongoDB', 'Redis', 'Prisma'
+    'Sui Move', 'Solidity', 'Walrus', 'zkLogin', 'Chainlink', 'Arbitrum', 'TypeScript', 'JavaScript',
+    'Java', 'Python', 'React', 'Next.js', 'Node.js', 'Express.js', 'WebSocket', 'gRPC', 'AWS', 'Docker',
+    'Kubernetes', 'Kafka', 'PostgreSQL', 'MongoDB', 'Redis', 'Prisma'
   ];
 
   return (
@@ -24,7 +25,7 @@ const Home: React.FC = () => {
           Hi, I'm <span className="text-[#B6B09F] dark:text-[#B8CFCE]">Abhimanyu Ajudiya</span>
         </h1>
         <p className="text-xl md:text-2xl text-[#B6B09F] dark:text-[#7F8CAA] mb-8 max-w-3xl mx-auto leading-relaxed transition-colors duration-300">
-          Software engineer building distributed systems, Web3 infrastructure, and high-performance backend services.
+          Founding Blockchain Engineer building decentralized infrastructure, smart contracts, and high-performance backend systems across Sui and EVM.
         </p>
         
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
@@ -56,6 +57,7 @@ const Home: React.FC = () => {
             { icon: Github, href: 'https://github.com/AbhimanyuAjudiya', label: 'GitHub' },
             { icon: Linkedin, href: 'https://www.linkedin.com/in/abhimanyu-ajudiya/', label: 'LinkedIn' },
             { icon: FaXTwitter, href: 'https://x.com/abhiii_aj', label: 'X (Twitter)' },
+            { icon: SiNotion, href: 'https://hail-dresser-3f4.notion.site/Abhimanyu-Ajudiya-36550e63d24f809fbc3ec3db340d5f7d', label: 'Notion' },
             { icon: FaTelegramPlane, href: 'https://t.me/abhimanyu_aj', label: 'Telegram' },
           ].map((social) => (
             <motion.a
@@ -81,8 +83,28 @@ const Home: React.FC = () => {
       >
         <h2 className="text-3xl font-bold text-black dark:text-[#EAEFEF] mb-6 text-center transition-colors duration-300">About Me</h2>
         <p className="text-lg text-[#B6B09F] dark:text-[#B8CFCE] leading-relaxed text-center max-w-3xl mx-auto mb-8 transition-colors duration-300">
-          I'm a final-year B.Tech IT student and full-stack developer with a deep interest in distributed systems, blockchain infrastructure, and backend engineering. I've won three international hackathons; including the Sui Overflow Global Hackathon ($30k prize, 3000+ developers) by shipping production-grade protocols under tight deadlines. I build decentralized platforms, backend systems, and infrastructure that handles real-world load. When I'm not building, I'm solving LeetCode problems (280+ solved) or reading system design papers.
+          I'm a software engineer who builds reliable backend systems, full-stack products, and infrastructure from the ground up. I work comfortably across the stack, from APIs, databases, and distributed systems to smart contracts and decentralized storage. As Founding Blockchain Engineer at SuiSign, I architected and shipped a full document-signing platform end to end. I've won three international hackathons, including the Sui Overflow Global Hackathon ($30k prize, among 3,000+ developers), by shipping production-grade systems under tight deadlines. When I'm not building, I'm solving LeetCode problems (250+ solved) or digging into system design.
         </p>
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.3 }}
+        className="bg-[#EAE4D5]/70 dark:bg-[#7F8CAA]/15 backdrop-blur-md rounded-2xl p-8 mb-16 transition-colors duration-300 border border-white/20 dark:border-[#B8CFCE]/10 shadow-xl"
+      >
+        <h2 className="text-3xl font-bold text-black dark:text-[#EAEFEF] mb-6 text-center transition-colors duration-300">Why Hire Me?</h2>
+        <div className="text-lg text-[#B6B09F] dark:text-[#B8CFCE] leading-relaxed max-w-3xl mx-auto space-y-5 transition-colors duration-300">
+          <p>
+            I'm genuinely obsessed with building. Most of my day goes into coding, learning new systems, and building things that actually matter. I love difficult problems because they push me to grow fast.
+          </p>
+          <p>
+            You can give me something completely unfamiliar with a hard deadline, and I'll still find a way to figure it out and ship it. That hunger to learn and execute is probably my biggest strength.
+          </p>
+          <p>
+            I'm not someone who wants to stay comfortable. I want to work with ambitious people, solve hard technical problems, and build products that have real impact. If you're betting on me, you're betting on someone who's going to outwork, outlearn, and keep compounding every single month.
+          </p>
+        </div>
       </motion.div>
 
       <motion.div

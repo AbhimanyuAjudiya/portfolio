@@ -4,6 +4,7 @@ import Layout from './components/Layout';
 import Home from './components/Home';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
+import Achievements from './components/Achievements';
 import Contact from './components/Contact';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/experience" element={<Experience />} />
+            <Route path="/achievements" element={<Achievements />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </Layout>

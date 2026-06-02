@@ -88,8 +88,8 @@ const Contact: React.FC = () => {
     {
       icon: MapPin,
       label: 'Location',
-      value: 'Guajarat, India',
-      href: 'https://www.google.com/maps/place/Guajarat',
+      value: 'Gujarat, India',
+      href: 'https://www.google.com/maps/place/Gujarat',
     },
   ];
 
